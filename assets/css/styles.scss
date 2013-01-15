@@ -1,0 +1,117 @@
+@import "assets/css/bourbon/bourbon";
+@import "assets/css/reset";
+
+* { @include box-sizing(border-box); }
+
+@include font-face(opensans, "/fonts/OpenSans-Regular-webfont");
+@include font-face(opensans, "/fonts/OpenSans-ExtraBold-webfont", bold);
+
+// Layout styles
+
+body {
+  background: #00c6ff;
+  color: #fff;
+  font: 13px/1.5 opensans;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.content {
+  background: #00f1a4;
+  color: #60897c;
+  padding: 80px 0 0 0;
+
+  h2 { color: #fff; }
+  a {
+    color: #60897c;
+    text-decoration: none;
+  }
+}
+
+// Base styles
+
+p {
+  margin-bottom: 40px;
+}
+
+h2 {
+  border-bottom: 10px solid #fff;
+  font: bold 130px opensans;
+  margin-bottom: 100px;
+  text-transform: uppercase;
+}
+
+h3 {
+  border-bottom: 2px solid;
+  color: #4c6b61;
+  display: inline-block;
+  font: bold 23px opensans;
+  height: 1.3em;
+  margin-bottom: 12px;
+}
+
+.other-projects {
+  font-size: 122px;
+  line-height: 0.8;
+  span {
+    line-height: 1.3;
+    font-size: 80px;
+  }
+}
+
+section { padding-bottom: 150px; }
+
+header {
+  padding: 14px 0 84px;
+  text-align: center;
+}
+
+blockquote {
+  border: 1px solid #66ddff;
+  border-width: 1px 0;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 63px;
+  padding: 36px 0 16px;
+  position: relative;
+
+  p {
+    margin-bottom: 24px;
+
+    &:before, &:after { content: "“"; }
+  }
+
+  footer {
+    font-size: 12px;
+    padding-right: 55px;
+    text-align: right;
+    text-transform: uppercase;
+
+    &:before { content: "- " }
+  }
+
+  &:before {
+    background: #00c6ff url(/img/chair.gif) center center no-repeat;
+    content: "";
+    display: block;
+    height: 62px;
+    margin-left: -37px;
+    position: absolute;
+    top: -31px;
+    left: 50%;
+    width: 74px;
+  }
+}
+
+// Modules styles
+
+.project {
+  display: inline-block;
+  margin-bottom: 40px;
+  padding: 0 40px 0 10px;
+  vertical-align: top;
+  width: 33%;
+}
