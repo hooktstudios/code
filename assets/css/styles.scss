@@ -51,6 +51,10 @@ h3 {
   font: bold 23px opensans;
   height: 1.3em;
   margin-bottom: 12px;
+
+  &.squizze {
+    font-size:18px;
+  }
 }
 
 .other-projects {
@@ -114,4 +118,8 @@ blockquote {
   padding: 0 40px 0 10px;
   vertical-align: top;
   width: 33%;
+}
+
+.hash {
+  color: #7f928c;
 }
