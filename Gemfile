@@ -3,8 +3,7 @@ ruby '1.9.3'
 
 gem 'sinatra', :require => 'sinatra/base'
 gem 'sinatra-assetpack'
-gem 'sinatra-advanced-routes',
-  :require => 'sinatra/advanced_routes'
+gem 'sinatra-advanced-routes'
 gem 'sinatra-export'
 gem 'rake'
 gem 'rack'
