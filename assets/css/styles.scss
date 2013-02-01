@@ -25,13 +25,20 @@ body {
   padding: 80px 0 0 0;
 
   h2 { color: #fff; }
-  a {
-    color: #60897c;
-    text-decoration: none;
-  }
+}
+
+.page-footer {
+  font-size: 11px;
+  padding: 10px 0 45px;
+  text-align: right;
 }
 
 // Base styles
+
+a {
+  color: #60897c;
+  text-decoration: underline;
+}
 
 p {
   margin-bottom: 40px;
@@ -45,16 +52,10 @@ h2 {
 }
 
 h3 {
-  border-bottom: 2px solid;
   color: #4c6b61;
   display: inline-block;
-  font: bold 23px opensans;
-  height: 1.3em;
+  font: bold 23px/1.2 opensans;
   margin-bottom: 12px;
-
-  &.squizze {
-    font-size:18px;
-  }
 }
 
 .other-projects {
@@ -71,6 +72,11 @@ section { padding-bottom: 150px; }
 header {
   padding: 14px 0 84px;
   text-align: center;
+}
+
+.plain {
+  list-style: none;
+  li { display: inline-block; }
 }
 
 blockquote {
@@ -112,24 +118,27 @@ blockquote {
 
 // Modules styles
 
-.project {
-  display: inline-block;
-  margin-bottom: 40px;
-  padding: 0 40px 0 10px;
-  vertical-align: top;
-  width: 33%;
+.projects {
+  li {
+    display: inline-block;
+    margin-bottom: 40px;
+    padding: 0 40px 0 10px;
+    vertical-align: top;
+    width: 33%;
+  }
+  h3 a {
+    color: #4c6b61;
+    display: inline-block;
+    text-decoration: none;
+
+    &:hover { color: lighten(#4c6b61, 10); }
+  }
 }
 
 .hash {
   color: #7f928c;
 }
 
-.more {
-  h2 {
-    font-size:80px;
-  }
-
-  p {
-    font-size:30px;
-  }
+.more p {
+  font-size: 28px;
 }
