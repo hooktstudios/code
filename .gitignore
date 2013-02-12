@@ -1,5 +1,7 @@
+.sass-cache/
 public/js/
 public/img/
 public/fonts/
 public/css/
-.sass-cache/
+public/index.html
+config/s3.yml
