@@ -14,5 +14,5 @@ To deploy (if you dare) configure the required s3 crendentials in `config/s3.yml
 
     cap [dev|www] deploy
 
-http://dev.code.com.s3-website-us-east-1.amazonaws.com
-http://www.code.com.s3-website-us-east-1.amazonaws.com
+[dev](http://dev.code.monhs.com.s3-website-us-east-1.amazonaws.com)
+[www](http://www.code.monhs.com.s3-website-us-east-1.amazonaws.com)

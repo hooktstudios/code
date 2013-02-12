@@ -1,8 +1,8 @@
 development:
-  bucket: ""
+  bucket: "dev.code.monhs.com"
   access_key_id: ""
   secret_access_key: ""
 production:
-  bucket: ""
+  bucket: "www.code.monhs.com"
   access_key_id: ""
   secret_access_key: ""
