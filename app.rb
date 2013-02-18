@@ -17,7 +17,8 @@ class App < Sinatra::Base
     serve '/img', from: 'assets/img'
 
     js :app, '/js/app.js', [
-      '/js/vendor/jquery.js',
+      '/js/vendor/jquery-1.9.1.min.js',
+      '/js/vendor/jquery.fittext.js',
       '/js/main.js'
     ]
     css :app, '/css/application.css', [

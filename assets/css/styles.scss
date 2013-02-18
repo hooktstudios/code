@@ -82,10 +82,17 @@ p {
 }
 
 h2 {
+  @include rem(130);
+
   border-bottom: 10px solid #fff;
-  font: bold 130px opensans;
+  line-height: 1;
+  font-family: opensans;
+  font-size: 130px;
+  font-weight: bold;
   margin-bottom: 100px;
+  padding-bottom: 25px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 h3 {
@@ -97,13 +104,10 @@ h3 {
 
 .other-projects {
   @include rem(120);
-  line-height: 1;
 
   span {
     @include rem(80);
     display: block;
-    line-height: 1.3;
-    margin-top: -15px;
   }
 
   .icon {
@@ -235,8 +239,4 @@ blockquote {
 
 .hash {
   color: #7f928c;
-}
-
-.more p {
-  @include rem(28);
 }
