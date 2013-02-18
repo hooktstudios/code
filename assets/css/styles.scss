@@ -1,4 +1,5 @@
 @import "assets/css/bourbon/bourbon";
+@import "assets/css/mixins";
 @import "assets/css/reset";
 
 * { @include box-sizing(border-box); }
@@ -8,10 +9,17 @@
 
 // Layout styles
 
+html {
+  font-size: 62.5%;
+}
+
 body {
+  @include rem(13);
+
   background: #00c6ff;
   color: #fff;
-  font: 13px/1.5 opensans;
+  line-height: 1.5;
+  font-family: opensans;
 }
 
 .container {
@@ -28,7 +36,8 @@ body {
 }
 
 .page-footer {
-  font-size: 11px;
+  @include rem(11);
+
   padding: 10px 0 45px;
   text-align: right;
 }
@@ -59,11 +68,12 @@ h3 {
 }
 
 .other-projects {
-  font-size: 120px;
+  @include rem(120);
   line-height: 0.8;
+
   span {
+    @include rem(80);
     line-height: 1.3;
-    font-size: 80px;
   }
 }
 
@@ -80,10 +90,11 @@ header {
 }
 
 blockquote {
+  @include rem(20);
+
   border: 1px solid #66ddff;
   border-width: 1px 0;
   display: inline-block;
-  font-size: 20px;
   margin-top: 63px;
   padding: 36px 0 16px;
   position: relative;
@@ -95,7 +106,8 @@ blockquote {
   }
 
   footer {
-    font-size: 12px;
+    @include rem(12);
+
     padding-right: 55px;
     text-align: right;
     text-transform: uppercase;
