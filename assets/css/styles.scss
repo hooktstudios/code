@@ -25,7 +25,9 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 980px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .content {
@@ -115,6 +117,8 @@ section { padding-bottom: 150px; }
 header {
   padding: 16px 0 84px;
   text-align: center;
+
+  nav { overflow: hidden; }
 }
 
 .plain {
@@ -127,8 +131,9 @@ blockquote {
 
   border: 1px solid #66ddff;
   border-width: 1px 0;
+  clear: both;
   display: inline-block;
-  margin-top: 110px;
+  margin-top: 80px;
   padding: 36px 0 16px;
   position: relative;
 
