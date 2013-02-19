@@ -25,15 +25,15 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 980px;
-  padding-left: 10px;
-  padding-right: 10px;
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .content {
   background: #00f1a4;
   color: #60897c;
-  padding: 80px 0 0 0;
+  padding: 8% 0 0 0;
 
   h2 { color: #fff; }
 }
@@ -87,12 +87,16 @@ h2 {
   border-bottom: 10px solid #fff;
   line-height: 1;
   font-family: opensans;
-  font-size: 130px;
   font-weight: bold;
-  margin-bottom: 100px;
+  margin-bottom: 10%;
   padding-bottom: 25px;
   text-transform: uppercase;
   white-space: nowrap;
+
+  strong {
+    display: block;
+    width: 100%;
+  }
 }
 
 h3 {
@@ -111,12 +115,11 @@ h3 {
   }
 
   .icon {
-    @include rem(130);
     margin-left: 10px;
   }
 }
 
-section { padding-bottom: 150px; }
+section { padding-bottom: 10%; }
 
 header {
   padding: 16px 0 84px;
@@ -193,12 +196,20 @@ blockquote {
 // Modules styles
 
 .projects {
+  font-size: 0;
+
   li {
+    @include rem(13);
+
     display: inline-block;
-    margin-bottom: 40px;
+    margin-bottom: 4%;
     padding: 0 40px 0 10px;
     vertical-align: top;
     width: 33%;
+
+    &:nth-child(3n) {
+      padding-right: 10px;
+    }
 
     &.icon:before {
       color: #fff;
@@ -239,4 +250,32 @@ blockquote {
 
 .hash {
   color: #7f928c;
+}
+
+@media screen and(max-width: 780px) {
+  .projects li {
+    padding: 0 10px;
+    width: 50%;
+  }
+}
+
+@media screen and(max-width: 550px) {
+  .projects li {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 100%;
+
+    &.icon {
+      padding-left: 90px;
+
+      &:before {
+        @include rem(75);
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
 }

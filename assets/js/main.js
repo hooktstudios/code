@@ -1,5 +1,7 @@
 $(document).ready(function(){
-  $("h2:eq(0)").fitText(0.738, {
-    maxFontSize: '130px'
-  });
+  var $titles = $('h2');
+
+  $titles.first().fitText(0.738, { maxFontSize: '130px' });
+  $titles.find('strong').fitText(0.8, { maxFontSize: '120px' });
+  $titles.find('span').fitText(1.2, { maxFontSize: '80px' });
 })
