@@ -2,7 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <title>Contributing to Open Source at Hookt Studios</title>
+    <meta name="description" value="Learn more about our team contributions to Open Source community (mostly ruby stuff)." />
     <meta name="viewport" content="width=device-width">
+    <meta property="og:image" content="http://code.hooktstudios.com/img/logo.png"/>
+    <meta property="og:site_name" content="Open Source at Hookt Studios"/>
     <%= css :app, :media => 'screen' %>
     <%= js  :app %>
   </head>
@@ -11,6 +15,7 @@
       <nav>
         <h1>Code.<a href="http://hooktstudios.com"><img src="/img/hs.png" alt="Hookt Studios" width="40" height="24"></a></h1>
         <ul class="meta-nav">
+          <li><a href="https://github.com/hooktstudios">GH</a></li>
           <li><a href="https://twitter.com/hooktstudios">TW</a></li>
           <li><a href="http://www.facebook.com/hookt.studios">FB</a></li>
           <li><a href="http://hooktstudios.com/">HS</a></li>
@@ -88,7 +93,21 @@
       </section>
     </div>
     <footer class="page-footer">
-      <p class="container">⬟ <a href="http://www.hooktstudios.com">Hookt Studios</a> thinks hexagons are underrated.</p>
+      <p class="container">⬢ <a href="http://www.hooktstudios.com">Hookt Studios</a> thinks hexagons are underrated.</p>
     </footer>
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-9009943-6']);
+    _gaq.push(['_setDomainName', 'code.hooktstudios.com']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
   </body>
 </html>
