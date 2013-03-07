@@ -211,12 +211,14 @@ blockquote {
       padding-right: 10px;
     }
 
-    &.icon:before {
+    .icon:before {
       color: #fff;
-      display: block;
       font-size: 210px;
       margin-bottom: 20px;
       text-align: center;
+      display: inline-block;
+      text-decoration: none;
+      width: 100%;
     }
   }
   h3 a {
@@ -267,12 +269,13 @@ blockquote {
     position: relative;
     width: 100%;
 
-    &.icon {
+    &.icony {
       padding-left: 90px;
 
-      &:before {
+      .icon:before {
         @include rem(75);
         position: absolute;
+        width: auto;
         left: 0;
         top: 0;
       }
