@@ -44,8 +44,8 @@ body {
   padding: 10px 0 45px;
   text-align: right;
 
-  ::first-letter {
-    @include rem(18);
+  .icon {
+    @include rem(15);
     margin-right: 3px;
   }
 
@@ -192,6 +192,7 @@ blockquote {
 .rails-bp:before            { content: "\2668"; }
 .sinatra-export:before      { content: "\2693"; }
 .sinatra-static:before      { content: "\26a1"; }
+.hexagon:before             { content: "\2b22"; }
 
 // Modules styles
 
