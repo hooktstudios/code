@@ -4,6 +4,9 @@ require 'capistrano/ext/multistage'
 set :default_stage, 'development'
 
 set :s3, YAML::load( File.open( File.expand_path( '../s3.yml', __FILE__ ) ) )
+set :bucket_write_options, {
+    cache_control: "max-age=94608000, public"
+}
 
 before 'deploy' do
   run_locally "rm -rf public/*"
