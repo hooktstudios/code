@@ -150,7 +150,7 @@ blockquote {
     &:before, &:after { content: "“"; }
   }
 
-  footer {
+  .author {
     @include rem(12);
 
     padding-right: 55px;
